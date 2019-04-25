@@ -323,7 +323,7 @@ box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
     float: right;
 	right: 6px;
 	top: 0;
-	background: url("img/button_close.png") no-repeat;
+	background: url("img/close_button.png") no-repeat;
 	background-size:contain;
 	cursor: pointer;
     z-index: 999999;
@@ -334,12 +334,22 @@ box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
 }
 
 
+
 @media only screen and (max-device-width: 800px) {
    .popup{
         display:block;
         width: 100%;
         position: relative;
         overflow-y: auto;
+        box-shadow: none;
+    }
+    
+     .popup2{
+        display: none;
+    }
+    
+     .container{
+        display: none;
     }
     
     html{
@@ -353,6 +363,52 @@ box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
     .close-button {
         display: none;
     }
+    .blog{
+        display: none;
+    }
+    
+    .topbar{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    
+    z-index: 999999;       
+}
+    
+    .topbar p{
+    position: relative;
+        top: -22px;
+    font-family: "NeueHaas";
+    font-size: 23px;
+/*    top: 0px;*/
+    padding-left: 10px;   
+    }
+
+.topbar .info{
+    display: none;
+    background-color: white;
+/*    height: auto;*/
+    position: fixed;
+    width: 50%;
+/*    z-index: 4;*/
+    top:28px;
+    right: 0;
+    padding-left: 5px;
+    
+    height: 10%;
+}
+    
+    .topbar .info p{
+   font-family: "NeueHaas";
+        font-size: 15px;
+    padding-left: 10px;
+        z-index: 999999;
+        padding-top: 10px;
+}
 }   
 @media only screen and (max-width: 800px) {
     .popup{
@@ -360,6 +416,15 @@ box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
         width: 100%;
         position: relative;
         overflow-y: auto;
+        box-shadow: none;
+    }
+    
+    .popup2{
+        display: none;
+    }
+    
+    .container{
+        display: none;
     }
     
     html{
@@ -373,4 +438,51 @@ box-shadow: 7px 7px 12px 1px rgba(0,0,0,0.75);
     .close-button {
         display: none;
     }
+     .blog{
+        display: none;
+    }
+    
+    .topbar{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    
+    z-index: 999999;       
+}
+    
+    .topbar p{
+    position: relative;
+        top: -22px;
+    font-family: "NeueHaas";
+    font-size: 23px;
+/*    top: 0px;*/
+    padding-left: 10px;   
+    }
+
+.topbar .info{
+    display: none;
+    background-color: white;
+/*    height: auto;*/
+    position: fixed;
+    width: 50%;
+/*    z-index: 4;*/
+    top:28px;
+    right: 0;
+    padding-left: 5px;
+    
+    height: 12%;
+}
+    
+    .topbar .info p{
+   font-family: "NeueHaas";
+        font-size: 15px;
+    padding-left: 10px;
+        z-index: 999999;
+        padding-top: 10px;
+}
+    
 } 

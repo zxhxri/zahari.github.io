@@ -15,7 +15,11 @@
 	</head>
 	<body>
         
-        
+           <div class="topbar">
+    <p>+</p>
+    <div class="info"><p>
+        Zahari Dimitrov <br>b. Sofia, 1998<br>Currently studying Graphic Design <br> KABK, The Hague, NL <br> <a href="mailto:z.dimitrov98@gmail.com" style="text-decoration: none">Send me an email...</a></p></div>
+    </div>
         
         <div class="popup2" id="popup-unstructured2" >
            <img src="img/eye.gif" class="center">
@@ -223,13 +227,14 @@ The main recognizable dilema is that as participants in our current society, we 
         </div>
          
         
-<!--        <div class="topbar"></div>-->
-        
+
        
      <div id="lastitem"><p>Zahari Dimitrov<br>
         b. Sofia, 1998<br>Currently studying Graphic Design <br> KABK, The Hague, NL <br> <a href="mailto:z.dimitrov98@gmail.com" style="text-decoration: none">Send me an email...</a></p>
          
             </div>
+        
+     
        
         
         <div class="blog">
@@ -385,21 +390,35 @@ So I have established that vulnerability is not a wound but the scar of individu
 			  if($(this).css('display')=='none'){
 
         
-                                //change the button label to be 'Show'
-//				toggle_switch.html('');
-//			  }else{
-                                //change the button label to be 'Hide'
-//				toggle_switch.html('Hide');
+                    
               
               }
 			});
 		  });
-				
+			$.noConflict();
+        $( function( ) {
+      function toggleMenuIndex( ) {
+        $( '.info' ).slideToggle( 1500 );
+      }
+      function closeMenuIndex( ) {
+        $( '.info' ).slideUp( 1500 );
+
+      }
+      $( '.topbar' ).click( toggleMenuIndex );
+      $( '.info' ).click( closeMenuIndex );
+    } );	
 		});
 
 
  
 </script>
+            
+            <script>  
+                
+
+    </script>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		
        
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
