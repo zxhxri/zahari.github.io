@@ -94,19 +94,11 @@ width: 100%;
 
 .round-border {
             
-            border-color: blue;
-			padding-left: 10px;
-            padding-top: 0px;
-			margin-bottom: 5px;
-            width: 72%;
-/*            overflow: scroll;*/
-/*    position:relative;*/
-/*
-    flex-grow: 1;
-    flex-shrink: 1;
-*/
-/*            width: 30%;*/
-/*    font-family: sans-serif;*/
+    border-color: blue;
+    padding-left: 10px;
+    padding-top: 0px;
+	margin-bottom: 5px;
+    width: 72%;
     font-size: 29px;
     
 		}
