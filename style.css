@@ -2,19 +2,12 @@ html {
     background-color: white;
     overflow: hidden;
     box-sizing: border-box;
-    display: hidden;
-
-
-
+/*    display:;*/
 }
-
-
 
 *::-webkit-scrollbar {
     display: none;
 }
-
-
 
 @font-face {
     font-family: 'ArialNarrow';
@@ -49,8 +42,6 @@ a:active {
     color: blue;
 }
 
-
-
 .blog {
     position: absolute;
     margin-top: 9%;
@@ -58,8 +49,6 @@ a:active {
     width: 19%;
     height: 83%;
     overflow: auto;
-
-
 }
 
 .blog p {
@@ -71,16 +60,13 @@ a:active {
     width: 100%;
 }
 
-
-
 .container {
-    border-left: 1px solid black;
     position: absolute;
     width: 40%;
     height: 98%;
-    top: 2%;
+    top: 0;
     left: 20%;
-    padding-top: 0%;
+    padding-top: 1vw;
     padding-right: 1%;
     /*    display:;*/
     overflow: auto;
@@ -95,14 +81,14 @@ a:active {
 
 
 .round-border {
-
     border-color: blue;
     padding-left: 10px;
     padding-top: 0px;
     margin-bottom: 5px;
     width: 72%;
     font-size: 29px;
-
+    border-left: 1px solid black;
+      padding-bottom: 20px;
 }
 
 .round-border div {
@@ -142,7 +128,7 @@ button {
     border: 0;
     border-left: 0;
     border-right: 0;
-    border-top: 0.2vh solid black;
+    border-top: 1px solid black;
     /*    border-bottom: 0.1px solid black;*/
     background-color: transparent;
     color: black;
@@ -176,22 +162,23 @@ button:hover {
 .dropdown-container p {
     width: 106%;
     padding-left: 7%;
+    font-size: 1.2vw;
 }
 
 
 
 
 #lastitem {
-    /*
-    font-family: sans-serif;
-    font-size: 1.5vw;
-*/
     position: fixed;
     top: 10px;
     width: 22%;
     margin: 0px;
     /*     display: inline-grid;*/
 
+}
+
+#lastitem_mobile{
+    display: none;
 }
 
 #lastitem p {
@@ -251,6 +238,30 @@ button:hover {
     background-color: white;
 }
 
+#popup-thesis{
+  background-color: white;
+    color: black;
+    padding: 0;
+   
+}
+
+
+#popup-thesis p{
+    font-size: 50px;
+}
+
+#popup-thesis iframe{
+    width: 100%;
+    height: 100%;
+    padding:0px;
+  margin:0px;
+    border:0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
 
 #popup-reality p {
     font-size: 1.5vw;
@@ -437,4 +448,117 @@ button:hover {
     }
 
 
+}
+
+@media only screen and (max-width: 1200px) {
+    .blog {
+        display: none;
+    }
+    
+    #lastitem{
+        display: none;
+       
+    }
+    #lastitem_mobile{
+        display: block;
+/*        position: fixed;*/
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+        padding-left: 10%;
+    }
+    
+    #lastitem_mobile p{
+        font-size: 1.5vw;
+    }
+    
+    #lastitem p {
+    font-family: NeueHaas, sans-serif;
+        float: left;
+    top: 10px;
+
+}
+
+    .container{
+        position: absolute;
+        float: left;
+        left: 0px;
+        padding-top: 0;
+/*        top: 10%;*/
+        width: 48%;
+        height: 100%;
+        display: block;
+        
+       
+    }
+    .round-border{
+         width: 100%;
+        padding-bottom: 20px;
+    }
+    .nav-toggle{
+        font-size: 2.3vw;
+        text-align: left;
+    }
+     .dropdown-container p {
+    width: 90%;
+    padding-left: 7%;
+         font-size: 2vw;
+}
+    
+}
+
+@media only screen and (max-device-width: 1200px) {
+    .blog {
+        display: none;
+    }
+    
+    #lastitem{
+        display: none;
+       
+    }
+    #lastitem_mobile{
+        display: block;
+/*        position: fixed;*/
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+        padding-left: 10%;
+    }
+    
+    #lastitem_mobile p{
+        font-size: 1.5vw;
+    }
+    
+    #lastitem p {
+    font-family: NeueHaas, sans-serif;
+        float: left;
+    top: 10px;
+
+}
+
+    .container{
+        position: absolute;
+        float: left;
+        left: 0px;
+        padding-top: 0;
+/*        top: 10%;*/
+        width: 48%;
+        height: 100%;
+        display: block;
+        
+       
+    }
+    .round-border{
+         width: 100%;
+        padding-bottom: 20px;
+    }
+    .nav-toggle{
+        font-size: 2.3vw;
+        text-align: left;
+    }
+     .dropdown-container p {
+    width: 90%;
+    padding-left: 7%;
+         font-size: 2vw;
+}
 }
