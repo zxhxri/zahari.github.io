@@ -23,7 +23,7 @@ html {
 
 /* unvisited link */
 a:link {
-    color: blue;
+    color: darkgreen;
     text-decoration: none;
 }
 
@@ -51,9 +51,14 @@ a:active {
     overflow: auto;
 }
 
+.blog p strong{
+    font-family: Helvetica;
+}
+
 .blog p {
-    font-family: "NeueHaas";
+    font-family: "Times New Roman";
     font-size: 14px;
+    color: darkgreen;
 }
 
 .blog img {
@@ -274,13 +279,19 @@ button:hover {
     width: 100%;
 }
 
-
+#popup-objects{
+    background-image: url("img/posters/expoposters/water.gif");
+    background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
+   
+/*    min-width: 100%;*/
     /*    min-height: 100%;*/
     width: auto;
     /*    height: auto; */
@@ -385,6 +396,10 @@ button:hover {
     .popup2 {
         display: none;
     }
+    
+    #popup-thesis, #popup-reality{
+        display: none;
+    }
 
     .container {
         display: none;
@@ -422,6 +437,10 @@ button:hover {
     }
 
     .popup2 {
+        display: none;
+    }
+    
+    #popup-thesis, #popup-reality{
         display: none;
     }
 
