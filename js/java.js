@@ -9,7 +9,7 @@ $(".close-button").click(function(){
 // activate the navigation links
 $(".menu-item").click(function(){
   // hide popup in case one is open
-  $('.popup').hide();
+  $('.popup').fadeOut();
 	// get the id of the clicked menu item
 	var id = $(this).attr('id');
   // use it to open the connected popup
