@@ -1,5 +1,3 @@
-
-    
 // activate the close button
 $(".close-button").click(function(){
 	// hide the popup
