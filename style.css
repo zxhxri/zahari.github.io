@@ -43,20 +43,21 @@ a:active {
 }
 
 .blog {
-    position: absolute;
-    margin-top: 9%;
-    border-top: 1px solid black;
+    position: fixed;
+/*    margin-top: 9%;*/
+/*    border-top: 1px solid black;*/
     width: 19%;
-    height: 83%;
+    height: auto;
+    bottom: 0;
     overflow: auto;
 }
 
 .blog p strong{
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
 }
 
 .blog p {
-    font-family: "Times New Roman";
+    font-family: 'NeueHaas', sans-serif;
     font-size: 14px;
     color: darkgreen;
 }
@@ -185,6 +186,10 @@ button:hover {
 #lastitem_mobile{
     display: none;
 }
+
+  #lastitem_phone{
+        display: none;
+    }
 
 #lastitem p {
     font-family: NeueHaas, sans-serif;
@@ -392,6 +397,27 @@ button:hover {
         overflow-y: auto;
         box-shadow: none;
     }
+    
+    #lastitem_mobile{
+        display: none;
+    }
+    
+     #lastitem_phone{
+        display: block;
+        position: absolute;
+        z-index: 999999;
+        background-color: white;
+        width: 100%;
+         top: 0;
+         left: 0;
+         padding-left: 10px;
+         font-size: 20px;
+    }
+    
+    p{  
+    font-size: 2.2vw;
+        column-count: 2;
+    }
 
     .popup2 {
         display: none;
@@ -402,7 +428,8 @@ button:hover {
     }
 
     .container {
-        display: none;
+        display: block;
+        width: 100%;
     }
 
     html {
@@ -435,7 +462,27 @@ button:hover {
         overflow-y: auto;
         box-shadow: none;
     }
-
+    
+    #lastitem_mobile{
+        display: none;
+    }
+    
+     #lastitem_phone{
+        display: block;
+        position: absolute;
+        z-index: 999999;
+        background-color: white;
+        width: 100%;
+         top:0;
+         left: 0;
+         padding-left: 10px;
+    }
+    
+    p{  
+    font-size: 2.2vw;
+         column-count: 2;
+    }
+    
     .popup2 {
         display: none;
     }
@@ -445,7 +492,8 @@ button:hover {
     }
 
     .container {
-        display: none;
+        display: block;
+        width: 100%;
     }
 
     html {
