@@ -2,6 +2,10 @@ html {
     background-color: white;
     overflow: hidden;
     box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     /*    display:;*/
 }
 
@@ -248,14 +252,6 @@ button:hover {
     background-color: white;
 }
 
-#popup-thesis {
-    background-color: white;
-    color: black;
-    padding: 0;
-
-}
-
-
 #popup-thesis p {
     font-size: 50px;
 }
@@ -394,8 +390,10 @@ button:hover {
         display: block;
         width: 100%;
         position: relative;
+        overflow-x: hidden;
         overflow-y: auto;
         box-shadow: none;
+        padding: 0;
     }
 
     #lastitem_mobile {
@@ -457,11 +455,13 @@ button:hover {
 @media only screen and (max-width: 800px) {
     .popup {
         display: block;
-        top: 22px;
+        top: 45px;
         width: 100%;
         position: relative;
         overflow-y: auto;
+        overflow-x: hidden;
         box-shadow: none;
+        padding: 0;
     }
 
     #lastitem_mobile {
