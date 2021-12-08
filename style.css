@@ -436,10 +436,6 @@ box-sizing: border-box;
         display: none;
     }
 
-    #popup-thesis,
-    #popup-reality {
-        display: none;
-    }
 
     .container {
         display: block;
@@ -507,11 +503,6 @@ box-sizing: border-box;
 }
     
     .popup2 {
-        display: none;
-    }
-
-    #popup-thesis,
-    #popup-reality {
         display: none;
     }
 
