@@ -438,8 +438,9 @@ box-sizing: border-box;
 
 
     .container {
-        display: block;
+        display: none;
         width: 100%;
+        content-visibility: hidden;
     }
 
     html {
@@ -479,6 +480,8 @@ box-sizing: border-box;
         display: none;
     }
 
+    
+    
     #lastitem_phone {
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -507,8 +510,9 @@ box-sizing: border-box;
     }
 
     .container {
-        display: block;
+        display: none;
         width: 100%;
+        content-visibility: hidden;
     }
 
     html {
