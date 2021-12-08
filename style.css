@@ -25,6 +25,31 @@ html {
     /* IE9 Compat Modes */
 }
 
+.se-pre-con {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
+}
+
+.se-pre-con img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%);
+    /* for Safari */
+    width: 250px;
+    height: 250px;
+
+}
+
 /* unvisited link */
 a:link {
     color: darkgreen;
@@ -480,7 +505,9 @@ box-sizing: border-box;
         display: none;
     }
 
-    
+    .se-pre-con {
+    display: block;
+}
     
     #lastitem_phone {
         -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -558,6 +585,10 @@ box-sizing: border-box;
     #lastitem_mobile p {
         font-size: 1.5vw;
     }
+    
+    .se-pre-con {
+    display: block;
+}
 
     #lastitem p {
         font-family: NeueHaas, sans-serif;
