@@ -363,6 +363,14 @@ button:hover {
     box-shadow: 7px 7px 12px 1px rgba(0, 0, 0, 0.75);
 }
 
+.popup .artwork6 {
+    position: static;
+    float: left;
+    margin: 4px;
+/*    width: 60%;*/
+    display: block;
+}
+
 .close-button {
     width: 7.5vw;
     height: 8%;
