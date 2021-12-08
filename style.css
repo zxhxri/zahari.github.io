@@ -427,6 +427,10 @@ box-sizing: border-box;
         font-size: 2.2vw;
         column-count: 2;
     }
+    
+    .popup .artwork6 {
+    margin: 0.5vw;
+}
 
     .popup2 {
         display: none;
@@ -498,6 +502,10 @@ box-sizing: border-box;
         column-count: 2;
     }
 
+     .popup .artwork6 {
+    margin: 0.5vw;
+}
+    
     .popup2 {
         display: none;
     }
