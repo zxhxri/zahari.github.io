@@ -13,6 +13,17 @@ html {
     display: none;
 }
 
+::-moz-selection {
+    /* Code for Firefox */
+    color: green;
+    background-color: lightgrey;
+}
+
+::selection {
+    color: green;
+    background-color: lightgrey;
+}
+
 @font-face {
     font-family: 'ArialNarrow';
     src: url('fonts/ArialNarrow.ttf');
@@ -246,6 +257,7 @@ button:hover {
     padding-left: 10px;
     padding-right: 10px;
     border-left: 1px solid black;
+    pointer-events: none;
 }
 
 #popup-reality {
@@ -367,7 +379,7 @@ button:hover {
     position: static;
     float: left;
     margin: 4px;
-/*    width: 60%;*/
+    /*    width: 60%;*/
     display: block;
 }
 
@@ -409,9 +421,11 @@ button:hover {
     }
 
     #lastitem_phone {
-        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;  
+        -webkit-box-sizing: border-box;
+        /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;
+        /* Firefox, other Gecko */
+        box-sizing: border-box;
         display: block;
         position: absolute;
         z-index: 999999;
@@ -427,10 +441,10 @@ box-sizing: border-box;
         font-size: 2.2vw;
         column-count: 2;
     }
-    
+
     .popup .artwork6 {
-    margin: 0.5vw;
-}
+        margin: 0.5vw;
+    }
 
     .popup2 {
         display: none;
@@ -480,12 +494,14 @@ box-sizing: border-box;
         display: none;
     }
 
-    
-    
+
+
     #lastitem_phone {
-        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;  
+        -webkit-box-sizing: border-box;
+        /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;
+        /* Firefox, other Gecko */
+        box-sizing: border-box;
         display: block;
         position: absolute;
         z-index: 999999;
@@ -501,10 +517,10 @@ box-sizing: border-box;
         column-count: 2;
     }
 
-     .popup .artwork6 {
-    margin: 0.5vw;
-}
-    
+    .popup .artwork6 {
+        margin: 0.5vw;
+    }
+
     .popup2 {
         display: none;
     }
